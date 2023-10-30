@@ -1,0 +1,178 @@
+body {
+    min-height: 100vh;
+    background: #fafafa;
+  }
+
+
+.social-link {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  border-radius: 50%;
+  transition: all 0.3s;
+  font-size: 0.9rem;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background: #ddd;
+  text-decoration: none;
+  color: #555;
+}
+
+.progress {
+  height: 10px;
+}
+
+h1 {
+  color: black;
+  margin-bottom: 0;
+  margin-top: 0;
+  text-align: center;
+  font-size: 40px;
+}
+
+h3 {
+    color: black;
+    font-size: 20px;
+    margin-top: 3px;
+    text-align: center;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.ml-auto{
+    margin-left:auto !important;
+}
+.mr-auto{
+    margin-right:auto !important;
+}
+
+.col-md-10,.col-md-8,.col-md-4{
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    scroll-behavior: smooth;
+}
+.col-md-8{flex:0 0 66.666667%;max-width:66.666667%}
+.col-md-4{flex:0 0 33.333333%;max-width:33.333333%}
+.col-md-10{flex:0 0 83.333333%;max-width:83.333333%}
+
+.arrow-bot {
+  position: fixed;
+  left: 40%;
+  bottom: 20px;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+}
+
+/*=============BOT=================*/
+
+/*=============Popup Button/Buttons=============*/
+
+.material-symbols-rounded {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+
+.open-btn {
+  background: #5d64e9;
+  color: whitesmoke;
+  padding: 16px 20px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  position: fixed;
+  font-size: 16px;
+  margin-right: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px 0px, rgba(17, 17, 26, 0.05) 0px 8px 32px 0px;
+  bottom: 24px;
+  right: 30px;
+  width:200px;
+}
+
+.close-btn {
+  color: black;
+  cursor: pointer;
+}
+.send-btn {
+  width: 60px;
+  background: #7d72e4;
+  color:white;
+  border-radius: 0 10px 10px 0;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  transition: all 300ms;
+}
+
+/*==========Chatbot===========*/
+
+.chat-window{
+  right: 16px;
+  bottom: 16px;
+  position: fixed;
+  z-index: 9;
+  display: none;
+}
+.message_holder {
+  margin-bottom : 5px;
+}
+.chat_container {
+  max-width : 350px;
+  height : 500px;
+  background-color : rgb(255, 255, 255);
+  overflow: auto;
+  padding : 5px 5px 0px 5px;
+  border: solid;
+  border-width: 1px;
+  border-radius: 15px 15px 0px 0px;
+}
+.chat {
+  padding : 10px;
+  border: 2px solid #ccc;
+  width: 80%;
+  margin: 5px;
+}
+.user1{
+  float : left;
+  border-radius : 0px 10px 10px 10px;
+  background-color: rgb(216, 227, 255);
+}
+.user2{
+  float : right;
+  border-radius : 10px 0px 10px 10px;
+}
+.form-container {
+  max-width : 350px;
+}
+
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+

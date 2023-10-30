@@ -1,0 +1,32 @@
+services:
+  nginx-proxy:
+    build: nginx
+    restart: always
+    volumes:
+      - ./nginx/default.conf:/tmp/default.conf
+    environment: 
+      - FLASK_SERVER_ADDR=flask-app:8000
+    ports:
+      - "80:80"
+    depends_on:
+      - flask-app
+    command: /app/start.sh
+
+  flask-app:
+    build: flask
+    restart: always
+    ports:
+      - '8000:8000'
+    command: gunicorn -w 3 -t 600 -b 0.0.0.0:8000 app:app
+
+  producta:
+    container_name: "producta"
+    build:
+        context: producta
+    restart: always
+    ports:
+     - 5005:5005
+    expose:
+     - 5005
+     
+###Add more here

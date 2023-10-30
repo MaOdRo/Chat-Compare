@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <meta content="utf-8" http-equiv="encoding" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <script src="static/app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Bot</title>
+</head>
+<body>
+
+
+
+<!-- Card -->
+<div class="container py-5">
+  
+  <header class="text-center mb-5">
+    <h1 class="display-4 font-weight-bold">Products </h1>
+    <p class="font-italic text-muted mb-0">From A to C</p>
+    
+  </header>
+
+
+  <!-- First Row -->
+  <h2 class="font-weight-bold mb-2">Shop</h2>
+  <p class="font-italic text-muted mb-4">Get information about the products from the chatbot at the bottom</p>
+
+  <div class="row pb-5 mb-4">
+    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+      <!-- Card-->
+      <div class="card rounded shadow-sm border-0">
+        <div class="card-body p-4"><img src="/static/images/LuxusuhrA1.jpeg" alt="" class="img-fluid d-block mx-auto mb-3">
+          <h5> <a href="#" class="text-dark">Product A</a></h5>
+          
+          <ul class="list-inline small">
+            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+            <li class="list-inline-item m-0"><i class="fa fa-star-o text-success"></i></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+      <!-- Card falls noch eine-->
+    </div>
+  </div>
+<!-- Card  End-->
+
+
+
+<div id="arrow" class="arrow-bot">
+    <p> Chatbot</p>
+<span class="material-symbols-outlined">
+    arrow_forward
+    </span>
+</div>
+
+
+<!-- Webchat widget -->
+<div id="rasa-chat-widget" data-websocket-url="http://localhost:5005" data-width="370">
+</div>
+<script src="https://unpkg.com/@rasahq/rasa-chat" type="application/javascript"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+

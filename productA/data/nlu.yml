@@ -1,0 +1,54 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+
+- intent: goodbye
+  examples: |
+    - bye
+    - good bye
+    - see you later
+
+
+- intent: affirm
+  examples: |
+    - yes
+    - yup
+    - correct
+    
+- intent: deny
+  examples: |
+    - no
+    - negativ
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - do i write with a bot?
+    - what are you?
+
+- intent: out_of_scope
+  examples: |
+    - I want to order food
+    - what is 2 + 2?
+    - Who is president?
+
+#product A
+#What does product a do?
+- intent: faq/ask_price_product
+  examples: |
+    - How much does [product a](product) cost?
+    - What is the price of [product a](product)?
+    - Is [product a](product) cheap?
+
+- intent: faq/ask_inform_product
+  examples: |
+    - Tell me something about [product a](product)
+    - Why should i buy [product a](product)?
+    - can you tell me something about [product a](product)?
+    - Are there informations about [product a](product)?

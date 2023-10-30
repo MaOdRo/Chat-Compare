@@ -1,0 +1,38 @@
+version: "3.1"
+
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - bot_challenge
+  - faq
+  - out_of_scope
+
+entities:
+  - Product
+
+responses:
+  utter_greet:
+  - text: "Hi. How can i help?"
+
+  utter_goodbye:
+  - text: "Bye"
+  - text: "see you later"
+
+  utter_iamabot:
+  - text: "I'm a bot"
+
+# Example Questions Product
+#Price
+  utter_faq/ask_price_product:
+  - text: "The price of Product A is 1000$"
+#information
+  utter_faq/ask_inform_product:
+  - text: "The color of Product A is blue."
+
+
+session_config:
+  session_expiration_time: 20
+  carry_over_slots_to_new_session: true
